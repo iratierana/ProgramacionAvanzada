@@ -54,8 +54,7 @@ public class Main {
 		String figura;
 
 		System.out.println("****Que figura quieres crear?****");
-		System.out
-				.println("cuadradado(c)/rectangulo(r)/triangulo(t)/circulo(o):");
+		System.out.println("cuadradado(c)/rectangulo(r)/triangulo(t)/circulo(o):");
 		figura = teclado.nextLine();
 
 		switch (figura.toLowerCase()) {

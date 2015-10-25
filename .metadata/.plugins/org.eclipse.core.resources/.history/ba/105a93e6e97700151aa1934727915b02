@@ -1,0 +1,10 @@
+package ingeSoft;
+
+public class Meses {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package empresa;
+
+public class Normal extends Empleado{
+
+	public Normal(int salario) {
+		super(salario);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}

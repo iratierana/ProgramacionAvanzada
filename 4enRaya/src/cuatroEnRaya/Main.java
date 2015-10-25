@@ -18,8 +18,10 @@ public class Main {
 
 	private void miMain() {
 		Scanner teclado = new Scanner(System.in);
-		tablero = new Tablero(FILAS, COLUMNAS);
+		Tablero tablero = new Tablero(FILAS, COLUMNAS);
 
+		tablero.inicializar();
+		
 		System.out.println("Bienvenidos al 4 en raya");
 		System.out.println("Nombre jugador 1(azul):");
 		jugador1 = teclado.nextLine();

@@ -1,0 +1,22 @@
+package empresa;
+
+public class Directivo extends Empleado {
+
+	int productividad;
+
+	
+	public Directivo(int salario, String nombre, int productividad) {
+		super(salario, nombre);
+		this.productividad = productividad;
+	}
+
+
+	public void calcular(){
+		salario = (int) (super.salario * (1+productividad/100));
+		
+	}
+
+	
+	
+	
+}
