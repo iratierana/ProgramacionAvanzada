@@ -1,0 +1,200 @@
+package ariketa1;
+
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
+import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
+import javax.swing.JTextField;
+import javax.swing.JToolBar;
+import javax.swing.ListSelectionModel;
+
+public class Main implements ActionListener{
+
+	JFrame ventana;
+	JMenuBar barra;
+	JMenu editar, salir, menuEditar, menuSalir;
+	JMenuItem opcionMenu;
+	JButton boton, confirm;
+	JToolBar toolBar;
+	JTextField textField;
+	JList<String> lista;
+	DefaultListModel<Alumno> listModel;
+
+	AbstractAction añadir, calificar;
+	
+	
+	public static void main(String[] args) {
+		Main ejercicio = new Main();
+		ejercicio.miMain();
+
+	}
+
+	private void miMain() {
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		double width = screenSize.getWidth();
+		double height = screenSize.getHeight();
+			
+		ventana = new JFrame("Prestatxen");
+		ventana.setJMenuBar(menubarra());
+		ventana.setSize((int)width, (int)height);
+		ventana.setLocation(0,0);
+		ventana.setContentPane(panelPrincipal());
+		ventana.setEnabled(true);
+		ventana.setVisible(true);
+		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	private JMenuBar menubarra() {
+		barra = new JMenuBar();
+		
+		barra.add(menuEditar());
+		
+		barra.add(Box.createHorizontalGlue());
+
+		barra.add(menuSalir());
+		
+		return barra;
+	}
+	
+	
+
+	private JMenu menuSalir() {
+		salir = new JMenu("Salir");
+		return salir;
+	}
+
+	private JMenu menuEditar() {
+		editar = new JMenu("Editar");
+		
+		opcionMenu = new JMenuItem("Añadir");
+	//	opcionMenu.addActionListener(this);
+		opcionMenu.setIcon(new ImageIcon("icons/window_new.png"));
+		editar.add(opcionMenu);
+		
+		editar.addSeparator();
+		
+		opcionMenu = new JMenuItem("Calificar");
+	//	opcionMenu.addActionListener(this);
+		opcionMenu.setIcon(new ImageIcon("icons/editcut.png"));
+		editar.add(opcionMenu);
+		
+		return editar;
+	}
+	
+	
+
+	private Container panelPrincipal() {
+		JPanel panelPrincipal = new JPanel(new BorderLayout());
+		
+		panelPrincipal.add(crearToolBar(), BorderLayout.NORTH);
+		
+		panelPrincipal.add(crearPrincipalCentral(), BorderLayout.CENTER);
+		
+		return panelPrincipal;
+	}
+
+	private Component crearToolBar() {
+		toolBar = new JToolBar();
+		toolBar.setBorder(BorderFactory.createRaisedBevelBorder());
+		
+		JButton boton;
+		boton = (JButton) toolBar.add(new JButton(new ImageIcon("iconos/edit_add.png")));
+		boton.setActionCommand("añadir");
+	//	boton.addActionListener(this);
+		
+		boton = (JButton) toolBar.add(new JButton(new ImageIcon("iconos/edit.png")));
+		boton.setActionCommand("calificar");
+//		boton.addActionListener(this);
+		
+		toolBar.add(Box.createHorizontalGlue());
+		
+		boton = (JButton) toolBar.add(new JButton(new ImageIcon("iconos/exit.png")));
+		boton.setActionCommand("salir");
+	//	boton.addActionListener(this);
+		
+		return toolBar;
+	}
+	
+	private Component crearPrincipalCentral() {
+		JSplitPane panelPrincipalCentral = new JSplitPane();
+		panelPrincipalCentral.setEnabled(true);
+		panelPrincipalCentral.setDividerLocation(500);
+		panelPrincipalCentral.setLeftComponent(panelCentralIzquierdo());
+		panelPrincipalCentral.setRightComponent(panelCentralDerecho());
+		
+		return panelPrincipalCentral;
+		
+	}
+
+	private Component panelCentralDerecho() {
+		JPanel panelCentralDerecho = new JPanel();
+		
+		this.crearAcciones();
+		
+		
+		return panelCentralDerecho;
+	}
+	
+	private void crearAcciones(){
+		//añadir = new OpenAccion("Añadir", new ImageIcon("icons/edit_add.png"), "Añadir", null);
+		//calificar = new OpenAccion("Salir", new ImageIcon("icons/edit.png"),"Calificar", null);
+		
+	}
+
+	private Component panelCentralIzquierdo() {
+		listModel = new DefaultListModel<Alumno>();
+		
+		lista = new JList<String>();
+	    lista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+	    lista.setSelectedIndex(0);
+
+	    JScrollPane listScrollPane = new JScrollPane(lista);
+	    
+	    return listScrollPane;
+	    
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		JMenuItem opcion;
+		String textoMsg = null;
+		
+		if(e.getSource()instanceof JMenuItem){
+			opcion = (JMenuItem) e.getSource();
+			textoMsg = opcion.getText();
+		}
+		if (e.getSource() instanceof JButton) {
+			textoMsg = ((JButton) e.getSource()).getActionCommand();
+			if(textoMsg.equals("salir")){
+				System.exit(0);
+				ventana.dispose();
+			}
+		}
+		
+	}
+	
+}

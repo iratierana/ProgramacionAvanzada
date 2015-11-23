@@ -1,0 +1,75 @@
+package circulosRectangulos;
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class Main implements ActionListener {
+	
+	JFrame ventana;
+	JMenuBar barra;
+	JMenu editar, salir;
+	JMenuItem opcionMenu;
+	
+
+	public static void main(String[] args) {
+		Main ejercicio = new Main();
+		ejercicio.miMain();
+	}
+
+	private void miMain() {
+		ventana = new JFrame("Lista figuras");
+		ventana.setJMenuBar(crearBarraMenu());
+		ventana.setSize(640, 480);
+		ventana.setLocation(200, 100);
+	//	ventana.setContentPane(crearPanelVentana());
+		ventana.setEnabled(true);
+		ventana.setVisible(true);
+		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
+	}
+
+	private JMenuBar crearBarraMenu() {
+		barra = new JMenuBar();
+		barra.add(crearMenuEditar());
+		barra.add(crearMenuSalir());
+		
+		return barra;
+	}
+
+	private JMenu crearMenuEditar() {
+		editar = new JMenu("Editar");
+		
+		opcionMenu = new JMenuItem("Añadir");
+		opcionMenu.addActionListener(this);
+		opcionMenu.setIcon(new ImageIcon("icons/window_new.png"));
+		editar.add(opcionMenu);
+		
+		editar.addSeparator();
+		
+		opcionMenu = new JMenuItem("Borrar");
+	//	opcionMenu.addActionListener(this);
+		opcionMenu.setIcon(new ImageIcon("icons/window_new.png"));
+		editar.add(opcionMenu);
+		
+		return editar;
+	}
+
+	/*private JMenu crearMenuSalir() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+*/
+}

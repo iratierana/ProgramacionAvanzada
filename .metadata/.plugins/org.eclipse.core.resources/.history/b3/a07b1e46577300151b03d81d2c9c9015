@@ -1,5 +1,0 @@
-package empresa;
-
-public class Comercial extends Empleado {
-
-}

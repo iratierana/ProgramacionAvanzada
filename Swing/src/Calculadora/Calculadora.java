@@ -142,9 +142,7 @@ public class Calculadora extends JFrame implements ActionListener {
 		return panel;
 	}
 	
-	public static void main(String[] args) {
-		Calculadora calculadora= new Calculadora();
-	}
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -199,5 +197,9 @@ public class Calculadora extends JFrame implements ActionListener {
 			resultado = Double.parseDouble(calc1) / Double.parseDouble(calc2);
 		}
 		
+	}
+	
+	public static void main(String[] args) {
+		Calculadora calculadora= new Calculadora();
 	}
 }

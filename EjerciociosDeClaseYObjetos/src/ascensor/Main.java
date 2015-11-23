@@ -57,9 +57,10 @@ public class Main {
 				
 				
 				break;
-			}
 			
+	
 		}while (option!=0);
+
 	}
 
 }

@@ -1,0 +1,121 @@
+package ariketa1;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.concurrent.BrokenBarrierException;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+
+public class MiDialogoNota extends JDialog implements ActionListener{
+
+	JButton ok;
+	JPanel panelCentral, panelSur, panelPrincipal;
+	JLabel lNota1, lNota2, lNota3, lNota4;
+	JTextField  tfNota1, tfNota2, tfNota3, tfNota4;
+	
+	public MiDialogoNota(JFrame ventana) {
+		super(ventana, "Calificacion Alumno");
+		
+		lNota1 = new JLabel("RA011:");
+		lNota2 = new JLabel("RA012:");
+		lNota3 = new JLabel("RA013:");
+		lNota4 = new JLabel("RA014:");
+		
+		tfNota1 = new JTextField("");
+		tfNota2 = new JTextField("");
+		tfNota3 = new JTextField("");
+		tfNota4 = new JTextField("");
+		
+		ok = new JButton("ok");
+		
+		panelPrincipal = new JPanel(new BorderLayout());
+		panelSur = new JPanel(new GridLayout(1,1,20,20));
+		panelCentral = new JPanel();
+		
+		this.setSize(400, 350);
+		this.setLocation(450, 230);
+		agregarListeners();
+		rellenarPanel();
+		this.setModal(true);
+		this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
+		this.setVisible(true);
+	}
+
+	private void rellenarPanel() {
+		panelPrincipal.add(panelCentral, BorderLayout.CENTER);
+		panelCentral.add(lNota1);
+		panelCentral.add(lNota2);
+		panelCentral.add(lNota3);
+		panelCentral.add(lNota4);
+		panelCentral.setBorder(BorderFactory.createCompoundBorder(
+				BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.BLACK), "Panel Datos"),
+				BorderFactory.createEmptyBorder(15, 15, 15, 15)));
+		
+		panelPrincipal.add(panelSur, BorderLayout.SOUTH);
+		
+		panelSur.add(ok);
+		
+		this.setContentPane(panelPrincipal);
+	}
+
+	private void agregarListeners() {
+		ok.addActionListener(this);		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		switch (e.getActionCommand()) {
+		case "ok":
+			if(comprobarDatos())
+				this.dispose();
+			else
+				JOptionPane.showMessageDialog(this,"Rellene todos los campos","ERROR",JOptionPane.ERROR_MESSAGE);
+			break;
+		
+
+		default:
+			break;
+		}
+		
+	}
+
+	private boolean comprobarDatos() {
+		if(0!=tfNota1.getText().compareTo("")){
+			if(0!=tfNota2.getText().compareTo("")){
+				if(0!=tfNota3.getText().compareTo("")){
+					if(0!=tfNota4.getText().compareTo("")){
+					return true;
+						}else
+							return true;
+				}
+			}
+		}
+	
+	return false;
+	}
+	
+	/*public Asignatura getNota(){
+		Alumno ret;
+		if(tfNota1.getText().compareTo("")==0)
+			ret = null;
+		else if(0==tfNota2.getText().compareTo(""))
+			ret = new nota(Integer.valueOf((tfNota1.getText())),//???
+					Integer.valueOf((tfNota2.getText())),
+					Integer.valueOf((tfNota3.getText())),
+					Integer.valueOf((tfNota4.getText())));		 
+		
+		return ret;
+	}*/
+
+}

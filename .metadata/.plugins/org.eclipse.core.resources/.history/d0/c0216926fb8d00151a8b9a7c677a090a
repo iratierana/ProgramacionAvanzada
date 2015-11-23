@@ -1,0 +1,44 @@
+package orcoElfoFichero;
+
+public abstract class Criatura {
+
+	int vida;
+	String nombre;
+	Artefacto artefacto;
+	
+	public Criatura(int vida, String nombre, Artefacto artefacto) {
+		super();
+		this.vida = vida;
+		this.nombre = nombre;
+		this.artefacto = artefacto;
+	}
+
+	
+	public Criatura(String strFichero){
+		super();
+	}
+	
+	@Override
+	public String toString() {
+		return "Criatura [vida=" + vida + ", nombre=" + nombre + ", artefacto="
+				+ artefacto.toString() + "]";
+	}
+	
+	public abstract void accion(Criatura criaturaObjetivo);
+
+	public int getVida() {
+		return vida;
+	}
+
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+	
+	
+	
+	
+}

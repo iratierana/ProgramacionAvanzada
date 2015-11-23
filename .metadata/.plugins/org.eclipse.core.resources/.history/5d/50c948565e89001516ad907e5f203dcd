@@ -1,0 +1,25 @@
+package ariketa1;
+
+import java.util.ArrayList;
+
+public class Alumno {
+
+	String nombre;
+	String apellido1;
+	String apellido2;
+	
+	ArrayList<Asignatura> listaAsignatura;
+
+	public Alumno(String[] split) {
+		nombre = split[0];
+		apellido1 = split[1];
+		apellido2 = split[2];
+		listaAsignatura = new ArrayList<Asignatura>();
+	}
+
+	public String toString(){
+		return nombre + " " + apellido1 + " " + apellido2;
+	}
+
+	
+}
