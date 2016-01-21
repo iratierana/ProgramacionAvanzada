@@ -1,0 +1,4 @@
+TITULO=Conversor Monedas
+BOTON=Mostrar cambio
+BORDE_COMBOIZ=Cantidad
+BORDE_COMBODE=Cantidad

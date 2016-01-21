@@ -1,0 +1,20 @@
+rectangulo
+cuadrado1
+23 23
+10 10
+circulo
+circulo1
+34 34
+10
+triangulo
+trianguloAzul
+3 4
+4 5
+rectangulo
+rectanguloRojo
+12 11
+10 12
+circulo
+circuloVerde
+25 25
+5

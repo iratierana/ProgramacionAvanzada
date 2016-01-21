@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;a&apos; in &apos;popbl3.LineaSerie.main(...)&apos; to &apos;listener&apos;&#x0D;&#x0A;- Original project: &apos;proyecto&apos;&#x0D;&#x0A;- Original element: &apos;popbl3.LineaSerie.main(String[]).a&apos;&#x0D;&#x0A;- Renamed element: &apos;a&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;a&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;popbl3{LineaSerie.java[LineaSerie~main~\[QString;@a!2502!2689!2526!2526!QSerialPortEventListener;!0!false" name="listener" references="true" stamp="1452615870350" version="1.0"/>
+</session>

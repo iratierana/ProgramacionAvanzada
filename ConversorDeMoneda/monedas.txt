@@ -1,0 +1,3 @@
+Euro = 1.0
+Rupia = 200.0
+Dollar = 1.2

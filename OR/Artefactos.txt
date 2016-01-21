@@ -1,0 +1,4 @@
+Arma$0$Pistola$7
+Veneno$1$lolele$0
+Pocion$2$Titureo$6
+Arma$3$Arco$5

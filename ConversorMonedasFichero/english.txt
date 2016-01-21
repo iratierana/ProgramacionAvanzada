@@ -1,0 +1,4 @@
+TITULO=Currency conversor
+BOTON=Show change
+BORDE_COMBOIZ=Amount
+BORDE_COMBODE=Amount

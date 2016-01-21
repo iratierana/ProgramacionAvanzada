@@ -5,11 +5,26 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Unibertsitatea\Github\ProgramacionAvanzada\proyectoSis"/>
+			<item value="D:\Unibertsitatea\Github\ProgramacionAvanzada\proyecto"/>
+			<item value="D:\Unibertsitatea\Github\ProgramacionAvanzada\Fecha"/>
+			<item value="D:\Unibertsitatea\Github\ProgramacionAvanzada\tablasimple"/>
+			<item value="D:\Unibertsitatea\Github\ProgramacionAvanzada\expaficheros Jaure"/>
+			<item value="D:\Unibertsitatea\Github\ProgramacionAvanzada\Kp3 Oier saizar"/>
+			<item value="D:\Unibertsitatea\Github\JavaAdvandcedProgramming\CowtekAplicacionControl"/>
+			<item value="C:\Users\Irati\Desktop\expaficheros"/>
+			<item value="F:\JTable"/>
+			<item value="E:\FormasFileText"/>
+			<item value="E:\BuscadorDePalabraEnFichero"/>
+			<item value="C:\Users\Irati\Desktop\problemasFicheros"/>
+			<item value="C:\Users\Irati\Desktop\ExamenSwing-1"/>
+			<item value="C:\Users\Irati\Desktop\tablasimple"/>
+			<item value="D:\Unibertsitatea\Github\JavaAdvandcedProgramming\intGraphicAllMp3Copier"/>
+			<item value="C:\Users\Irati\Desktop\temasvarios"/>
 			<item value="D:\Unibertsitatea\Github\JavaAdvandcedProgramming\TelePizza"/>
 			<item value="D:\Unibertsitatea\Github\JavaAdvandcedProgramming\intGraphicContactDiary"/>
 			<item value="D:\Unibertsitatea\Github\JavaAdvandcedProgramming\intGraphicPuzzleGame"/>
 			<item value="C:\Users\Irati\Downloads\juegosimple"/>
-			<item value="E:\Hogar"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
@@ -22,6 +37,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
 		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>

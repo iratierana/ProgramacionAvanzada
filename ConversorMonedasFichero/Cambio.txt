@@ -1,0 +1,5 @@
+Euro=1
+Dolar=1.063
+Libra=0.7058
+Rupia india=70.505
+Mireia = 0.2

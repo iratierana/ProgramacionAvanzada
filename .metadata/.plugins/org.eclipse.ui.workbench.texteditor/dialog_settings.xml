@@ -6,19 +6,20 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="File" key="selection"/>
+		<item value="data" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="file"/>
-			<item value="clue"/>
-			<item value="spli"/>
-			<item value="error en divisa"/>
-			<item value="getSe"/>
-			<item value="JTextField"/>
-			<item value="accion"/>
+			<item value="data"/>
+			<item value="getIn"/>
+			<item value="serialEvent"/>
+			<item value="seria"/>
+			<item value="evt"/>
+			<item value="panelIm "/>
+			<item value="size"/>
+			<item value="cancelar"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -27,7 +28,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="563" key="DIALOG_X_ORIGIN"/>
-		<item value="118" key="DIALOG_Y_ORIGIN"/>
+		<item value="959" key="DIALOG_X_ORIGIN"/>
+		<item value="186" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

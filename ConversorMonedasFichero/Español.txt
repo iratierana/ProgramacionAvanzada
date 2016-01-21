@@ -1,0 +1,5 @@
+titulo = Conversor Moneda
+MensajeCantidad = Cantidad
+BotonCambio = Mostrar cambio
+TituloError=Algo fue mal
+MensajeError=Tienes que introducir un numero

@@ -1,0 +1,7 @@
+irati$Irati$Eraña$Robles$kakita$Primera Falange$jon$3
+1$Cerrar la mano$Hay que doblar los dedos hasta conseguir un puño cerrado. Después, hay que abrir la mano$imagenes/dedo2.gif$Mu bien$30/12/2015$5$true
+4$Juntar anular - pulgar$Hay que juntar los dedos anular y pulgar hasta que sus yemas se junten. Después volver a la posición inicial$imagenes/dedo2.gif$$30/12/2015$5$true
+5$Juntar meñique - pulgar$Hay que juntar los dedos meñique y pulgar hasta que sus yemas se junten. Después volver a la posición inicial$imagenes/dedo2.gif$$30/12/2015$5$true
+user1$user1$user1$user1$Txago$Segunda Falange$jon$2
+1$Cerrar la mano$Hay que doblar los dedos hasta conseguir un puño cerrado. Después, hay que abrir la mano$imagenes/dedo2.gif$$30/12/2015$5$true
+2$Juntar índice - pulgar$Hay que juntar los dedos índice y pulgar hasta que sus yemas se junten. Después volver a la posición inicial$imagenes/segunda_falange.gif$$30/12/2015$5$true

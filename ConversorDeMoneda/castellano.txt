@@ -1,0 +1,7 @@
+Titulo = Conversor de moneda
+TituloPanelIzq = Entrada
+TituloPanelDer = Salida
+TituloPantallas = Valor
+TextoBotonConvertir = Convertir
+MensajeErrorFormato = Error de Formato
+TituloErrorFormato = Mensaje de error

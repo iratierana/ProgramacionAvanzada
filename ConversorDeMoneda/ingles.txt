@@ -1,0 +1,7 @@
+Titulo = Currency converter
+TituloPanelIzq = Input
+TituloPanelDer = Output
+TituloPantallas = Value
+TextoBotonConvertir = Convert
+MensajeErrorFormato = Format error
+TituloErrorFormato = Error message

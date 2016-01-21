@@ -1,0 +1,6 @@
+Euro=1
+Libra=1.4194
+Peso=0.056
+Rublo=
+Corona=
+Dolar=

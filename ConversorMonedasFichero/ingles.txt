@@ -1,0 +1,5 @@
+titulo = Currency converter
+MensajeCantidad = Amount
+BotonCambio = Show change
+TituloError=Something went wrong
+MensajeError=You must enter a number
